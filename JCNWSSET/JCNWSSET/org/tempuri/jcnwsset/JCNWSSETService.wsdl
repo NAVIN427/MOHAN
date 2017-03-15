@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="JCNWSSET" targetNamespace="http://tempuri.org/JCNWSSET" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://tempuri.org/JCNWSSET" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:documentation>
+    <wsdl:appinfo source="WMQI_APPINFO">
+      <MRWSDLAppInfo imported="true">
+        <binding hasEncoding="false" imported="true" name="JCNWSSETSOAP_HTTP_Binding" originalBindingStyle="document"/>
+      </MRWSDLAppInfo>
+    </wsdl:appinfo>
+  </wsdl:documentation>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/JCNWSSET" xmlns:mrm="http://tempuri.org/JCNWSSET">
+      <xsd:include schemaLocation="JCNWSDEF_WSDLGenWrapper.mxsd"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="Operation1_in">
+    <wsdl:part element="tns:RequestMsg" name="RequestMsg"/>
+  </wsdl:message>
+  <wsdl:message name="Operation1_out">
+    <wsdl:part element="tns:ResponseMsg" name="ResponseMsg"/>
+  </wsdl:message>
+  <wsdl:portType name="JCNWSSETPortType">
+    <wsdl:operation name="Operation1">
+      <wsdl:input message="tns:Operation1_in" name="Operation1_Input"/>
+      <wsdl:output message="tns:Operation1_out" name="Operation1_Output"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="JCNWSSETSOAP_HTTP_Binding" type="tns:JCNWSSETPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Operation1">
+      <soap:operation soapAction=""/>
+      <wsdl:input name="Operation1_Input">
+        <soap:body parts="RequestMsg" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="Operation1_Output">
+        <soap:body parts="ResponseMsg" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="JCNWSSETSOAP_HTTP_Service">
+    <wsdl:port binding="tns:JCNWSSETSOAP_HTTP_Binding" name="JCNWSSETSOAP_HTTP_Port">
+      <soap:address location="http://localhost:7800/JCNWSSETSOAP_HTTP_Service"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

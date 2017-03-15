@@ -1,0 +1,60 @@
+Summary of selections: WSDL files generation
+
+The selected message set:
+/JCNWSSET/JCNWSSET
+
+The generated WSDL files will go into:
+/JCNWSSET/JCNWSSET
+
+The version of WSDL to be generated: 1.1
+The version of SOAP to be generated: 1.1
+
+The selected style for WSDL generation: document
+The WSDL Namespace: http://tempuri.org/JCNWSSET
+
+The following operations will be created:
+Operation1 (Request-Response)
+
+The following bindings are selected:
+SOAP over http.
+
+The following WSDL files will be generated:
+/JCNWSSET/JCNWSSET/JCNWSSETService.wsdl
+
+
+Generating XML Schema files from Message Definition files
+Generating schema for no XML Wire format
+Generating schema using the strict option
+All complex types and groups with a Content validation of "Open" or "Open defined" will be generated as if they had Content validation "Closed"
+All complex types and groups with a Composition of "Ordered set" or "Unordered set" will be generated with a Composition of "Sequence"
+All complex types and groups with a Composition of "Message" will be generated with a Composition of "Choice"
+
+
+Processing File : "/JCNWSSET/JCNWSSET/JCNWSDEF.mxsd"
+
+Saving File : "/JCNWSSET/JCNWSSET/org/tempuri/jcnwsset/JCNWSDEF.xsd" 
+
+Generating XML Schema file \JCNWSSET\JCNWSSET\JCNWSDEF.mxsd from Message Definition file \JCNWSSET\JCNWSSET\org\tempuri\jcnwsset\JCNWSDEF.xsd
+Creating new WSDL Service file '\JCNWSSET\JCNWSSET\org\tempuri\jcnwsset\JCNWSSETService.wsdl'
+Setting wsdl definition name for 'JCNWSSETService.wsdl': JCNWSSET
+Setting wsdl definition targetNamespace for 'JCNWSSETService.wsdl': http://tempuri.org/JCNWSSET
+Adding namespace: xmlns for 'JCNWSSETService.wsdl':soap=http://schemas.xmlsoap.org/wsdl/soap/
+Adding namespace: xmlns for 'JCNWSSETService.wsdl':xsd=http://www.w3.org/2001/XMLSchema
+Adding namespace: xmlns for 'JCNWSSETService.wsdl':wsdl=http://schemas.xmlsoap.org/wsdl/
+Creating new WSDL Interface file '\JCNWSSET\JCNWSSET\org\tempuri\jcnwsset\JCNWSSETService.wsdl'
+Creating portType for WSDL Interface: JCNWSSETPortType
+Creating portType operation 'Operation1'
+Creating message 'Operation1_in'
+Creating message 'Operation1_out'
+Creating SOAP over HTTP binding 'JCNWSSETSOAP_HTTP_Binding'
+Creating binding operation 'Operation1' for binding 'JCNWSSETSOAP_HTTP_Binding'
+Creating SOAP over HTTP service 'JCNWSSETSOAP_HTTP_Service'
+Creating port 'JCNWSSETSOAP_HTTP_Port' for service 'JCNWSSETSOAP_HTTP_Service'
+
+Elapsed time processing this WSDL definition: 0.444 seconds
+Number of warnings for this WSDL definition: 0
+
+
+Number of files processed: 2
+
+
